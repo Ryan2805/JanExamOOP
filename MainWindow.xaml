@@ -7,6 +7,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListBox HorizontalAlignment="Left" Height="2" Margin="109,114,0,0" VerticalAlignment="Top" Width="1" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="55,99,565,154" SelectionChanged="ListBox_SelectionChanged_1"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="284,97,339,154"/>
+        <Button Content="Add" Margin="686,286,64,127"/>
+        <Label Content="Income" HorizontalAlignment="Left" Margin="55,68,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label Content="Expenses" HorizontalAlignment="Left" Margin="284,68,0,0" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Budget Planner" HorizontalAlignment="Left" Margin="55,18,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="577,99,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="577,130,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.467,0.298"/>
+        <Label Content="Amount" HorizontalAlignment="Left" Margin="577,164,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Recurring" HorizontalAlignment="Left" Margin="577,253,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="651,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="651,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker HorizontalAlignment="Left" Margin="651,132,0,0" VerticalAlignment="Top"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="590,286,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label Content="Search" HorizontalAlignment="Left" Height="23" Margin="55,382,0,0" VerticalAlignment="Top" Width="74"/>
+        <TextBox TextWrapping="Wrap" Width="120" Margin="115,387,565,29"/>
+        <Label Content="Total Income" HorizontalAlignment="Left" Margin="55,307,0,0" VerticalAlignment="Top" Height="24" FontSize="8"/>
+        <Label Content="Current Balance" HorizontalAlignment="Left" Margin="55,348,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label Content="Total Outgoings" HorizontalAlignment="Left" Margin="284,307,0,0" VerticalAlignment="Top" FontSize="8" Height="24"/>
+        <Viewbox Margin="133,311,597,107"/>
+        <Viewbox Margin="133,348,590,65"/>
+        <Viewbox Margin="380,307,345,107"/>
+        <RadioButton Content="Income" HorizontalAlignment="Left" Margin="577,217,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Expense" HorizontalAlignment="Left" Margin="693,217,0,0" VerticalAlignment="Top"/>
+
+
+
     </Grid>
 </Window>
