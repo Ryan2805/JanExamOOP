@@ -35,10 +35,25 @@ namespace JanExamOOP
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
         }
+        //Display Income List Box
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Income 
+            // Why is BudgetItem saying theres no response to the Boolean recurring if theres true & false 
+            BudgetItem item1 = new BudgetItem("Grant", "5th of Month", 300, true);
+            BudgetItem item2 = new BudgetItem("Bonus", "15th of Month", 300, false);
+            BudgetItem item3 = new BudgetItem("Wages", "25th of Month", 100, true);
+
+            
+            //Display
+            lbx.Items.Add(item1);
+        }
+
 
 
 

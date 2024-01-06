@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <ListBox HorizontalAlignment="Left" Height="2" Margin="109,114,0,0" VerticalAlignment="Top" Width="1" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="55,99,565,154" SelectionChanged="ListBox_SelectionChanged_1"/>
+        <ListBox x:Name="income" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="55,99,565,154" SelectionChanged="ListBox_SelectionChanged_1"/>
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="284,97,339,154"/>
         <Button Content="Add" Margin="686,286,64,127"/>
         <Label Content="Income" HorizontalAlignment="Left" Margin="55,68,0,0" VerticalAlignment="Top" Width="90"/>

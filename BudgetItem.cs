@@ -9,22 +9,25 @@ namespace JanExamOOP
     /* 
      * Cannot get the Icomparable to work
      */
-    internal abstract class BudgetItem : IComparable<DateTime> 
+    internal  class BudgetItem : IComparable<DateTime> 
     {
         public int CompareTo(DateTime value)
         {
-            if ()
+           
+            return 0;
         }
-        public string[] BudgetItem 
 
+     
         public string Name { get; set; }
         public decimal Amount { get; set; }
 
         public enum ItemType {Income, Expense }
 
+        public string[] ItemList = new string[7];
         public DateTime Date { get; set; }
 
         public Boolean Recurring { get; set; }
+        
 
         public BudgetItem(string name, decimal amount, Enum itemType, DateTime date, Boolean recurring)
         {
